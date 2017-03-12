@@ -69,79 +69,267 @@
 <div class="bar-long"></div>
 <div id="scrollup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.054 286.054"><path d="M143.027 0C64.04 0 0 64.04 0 143.027c0 78.996 64.04 143.027 143.027 143.027s143.027-64.03 143.027-143.027C286.054 64.05 222.014 0 143.027 0zm0 259.236c-64.183 0-116.21-52.026-116.21-116.21s52.027-116.2 116.21-116.2 116.21 52.018 116.21 116.2-52.027 116.21-116.21 116.21zm51.677-125.148h-24.86V89.392c0-4.934-3.996-8.94-8.94-8.94H125.15c-4.934 0-8.94 4.006-8.94 8.94v44.696H91.342c-9.698 0-13.667 6.463-8.822 14.338l51.686 51.096c4.845 7.884 12.783 7.884 17.637 0l51.678-51.096c4.863-7.875.894-14.338-8.814-14.338z"/></svg></div>
 
-<form  method="POST" class="form-inline db-form" action="javascript:void(null);">
+<din id="sec_01">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 header">
+                <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg></div>
+                <p class="info">16 марта 2017 г, 18:00 <br /> Киев, ул Коновальца <br /> д 36д, 8 этаж</p>
+            </div>
+            <div class="col-12">
+                <div class="main_block">
+                    <p class="beforeheader">Эксперты команды TOP 10 digital agency Ukraine  о том</p>
+                    <h1>Как получить максимум <br /> от маркетинга</h1>
+                    <p class="afterheader">Бесплатный мастер-класс по эффективному <br /> маркетингу  для собственников бизнеса</p>
+                    <a href="#sec_02" class="btn_more flex scroll">Забронировать участие</a>
+                </div>
+                <a href="#sec_02" class="scroll flex btndwn"><img src="img/bl1_arrow.png" alt="Arrow"></a>
+            </div>
+        </div>
+    </div>
+</din>
 
-    <!-- Hidden DB Fields -->
+<div id="sec_02">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text--title">Не упусти возможность узнать, <br /> как закрыть финансовые <br /> дыры в бюджете </h2>
+                <div class="item item--margined">
+                    <p class="title text--title">Записаться на участие в мастер-классе <br /> от Rezart Agency за <span class="text--hl">1 клик</span></p>
+                    <p class="places_left text--title">Осталось <span class="text--gold places_counter">5</span> свободных мест</p>
+                    <p class="block_text">Оставьте заявку на регистрацию в мастер-классе</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form_block">
+                    <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
+                        <!-- Hidden DB Fields -->
 
-    <input type="hidden" id="registrationType" name="registrationType" value="default_registration">
-    <input type="hidden" id="orderType" name="orderType" value="Zayavka">
-    <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
-    <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
-    <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
-    <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
-    <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
-    <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
-    <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
-    <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
-    <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
-    <input type="hidden" name="city" value="<?php echo $data['city']; ?>">
-    <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
-    <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
-    <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
-    <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
-    <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
-    <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+                        <!-- <input type="hidden" id="registrationType" name="registrationType" value="default_registration"> -->
+                        <!-- <input type="hidden" id="orderType" name="orderType" value="Zayavka"> -->
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="<?php echo $data['city']; ?>">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
 
-    <!-- Zoho -->
-<!--     <input type="hidden" name="product_id" value="2167809000000656177">
-    <input type="hidden" name="product_name" value="&laquo;BootCamp 2&raquo;"> -->
-    <!-- Zoho -->
+                        <!-- Zoho -->
+                    <!--     <input type="hidden" name="product_id" value="1212">
+                        <input type="hidden" name="product_name" value="&laquo;BootCamp 2&raquo;"> -->
+                        <!-- Zoho -->
 
-    <!-- END Hidden DB Fields -->
+                        <!-- END Hidden DB Fields -->
 
-    <!-- Hidden Required Fields -->
-    <input type="hidden" name="project_name" value="CompanyName">
-    <input type="hidden" name="admin_email" value="alien_202@mail.ru">
-    <input type="hidden" name="goal" value="conversion_1">
-    <input type="hidden" name="form_type" value="firstForm ">
-    <!-- END Hidden Required Fields -->
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Rezart">
+                        <input type="hidden" name="admin_email" value="project@rezart.agency">
+                        <input type="hidden" name="form_subject" value="Rezart Article">
+                        <!-- END Hidden Required Fields -->
 
-    <span class="field">
-        <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
-        <span class="bar"></span>
-    </span>
-
-
-    <span class="field">
-        <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
-        <span class="bar"></span>
-    </span>
-
-    <span class="field">
-        <input type="email" required="" placeholder="Ваш E-Mail" name="email" class="form-control">
-        <span class="bar"></span>
-    </span>
-
-
-    <button type="submit" class="btn" name="send">Отправить</button>
-
-
-    <button type="submit" class="btn" name="send"><span>Записаться на консультацию</span></button>
-
-    <!-- Просто любое дополнительное поле -->
-    <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
-    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
-    <input type="hidden" class="pacet" name="form_pacet" value="">
-    <!-- GET RESPONCE INPUTS -->
-    <input type="hidden" name="start_day" value="0"/>
-    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
-    <input type="hidden" name="campaign_token" value=""/>
-    <!-- GET RESPONCE INPUTS -->
-    <div class="clear"></div>
+                        <span class="input field">
+                            <input id="name_01" required="" class="form-control name input__field " type="text" name="name" />
+                            <label class="input__label" for="name_01">
+                                <span class="input__label-content">Ваше имя, наименование организации</span>
+                            </label>
+                        </span>
 
 
-</form>
+                        <span class="input field">
+                            <input id="tel_01" required="" class="form-control name input__field" type="tel" name="phone"  />
+                            <label class="input__label" for="tel_01">
+                                <span class="input__label-content">Ваш номер телефона</span>
+                            </label>
+                        </span>
 
+
+                        <button type="submit" class="btn" name="send" >отправить заявку</button>
+
+                        <!-- Просто любое дополнительное поле -->
+                        <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+                        <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                        <input type="hidden" class="pacet" name="form_pacet" value="">
+                        <!-- GET RESPONCE INPUTS -->
+                        <input type="hidden" name="start_day" value="0"/>
+                        <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                        <input type="hidden" name="campaign_token" value=""/>
+                        <!-- GET RESPONCE INPUTS -->
+                        <div class="clear"></div>
+
+                    </form>
+                    <div class="text--sm">* Ваши данные никогда не будут переданы 3-м лицам</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_03">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h2 class="text--title">Почему мастер-класс от Rezart Agency — <br /> №1 в Вашем «tо do» листе? </h2>
+                <p class="block_text">Это уникальные знания, родившиеся из личного опыта команды Rezart Agency <br /> Вы <span class="text--title text--hl">научитесь монетизировать возможности и знания сотрудников на 101%</span></p>
+            </div>
+            <div class="col-4">
+                <img src="img/bl3_img1.png" alt="Rezart первый в списке задач" class="sec_img">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_04">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text--title">Какие бизнес-темы мы разберем вместе с Вами на встрече? </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img src="img/bl4_img1.png" alt="Живое общение с профессионалами" class="sec_img-1">
+            </div>
+            <div class="col-7">
+                <p class="text--title title">Об этом тебе никто не расскажет, кроме нас</p>
+                <p class="block_text">За 3 часа живого общения с Игорем Головко и Евгением Шевченко <br /> Вы узнаете первыми о <span class="text--title">реальных способах закрытия болевых точек</span> <br /> в бизнесе и сможете внедрить у себя: </p>
+                <ul class="item_list">
+                    <li>Маркетинг. Customer Journey. KPI отдела маркетинга</li>
+                    <li>Стоимость каждого сотрудника. Как экономить. Экосистема аналитики</li>
+                    <li>Воронки больше не продают. Почему? Что делать</li>
+                    <li>Коммуникация бренда</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_05">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h2 class="text--title">Всего через 3 часа живого общения <br /> Вы узнаете о решении Ваших бизнес-болей: </h2>
+                <ul class="item_list fst_col">
+                    <li>Понимание того, что компания <br /> катится вниз, отстала от рынка <br /> и тенденций, конкуренты опережают</li>
+                    <li>Нет портрета идеального клиента,  <br /> не настроены цели</li>
+                    <li>Нет заказов, мало клиентов, <br /> убытки, работа в 0 или минус</li>
+                </ul>
+                <ul class="item_list scnd_col">
+                    <li>Вы погрязли в операционке,  <br /> все делите вручную или в excel файлах, <br /> нет отдела маркетинга в компании,  <br /> нет интернет-маркетинга</li>
+                    <li>Нет аналитики и показателей эффективности,  <br /> нет прогнозируемой прибыли</li>
+                    <li>Большие затраты  <br /> на маркетинг/рекламу</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <img src="img/bl5_img1.png" alt="Решение проблем в бизнесе" class="sec_img-1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_05">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text--title text--white title">Это апгрейд для Вашего бизнеса на 101% <br /> Ваша бизнесбомба для оптимизации бюджета, <br /> увеличения лояльности имеющихся клиентов и притока новых <br /><span class="text--hl">Событие, которое Вы ждали</span> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sec_06">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text--title">Обучайтесь у лучших и с лучшими</h2>
+                <div class="item item--margined">
+                    <p class="title text--title">Записаться на участие в мастер-классе <br /> от Rezart Agency за <span class="text--hl">1 клик</span></p>
+                    <p class="places_left text--title">Осталось <span class="text--gold places_counter">5</span> свободных мест</p>
+                    <p class="block_text">Оставьте заявку на регистрацию в мастер-классе</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form_block">
+                    <form  method="POST" class="form-inline db-form" action="javascript:void(null);">
+                        <!-- Hidden DB Fields -->
+
+                        <!-- <input type="hidden" id="registrationType" name="registrationType" value="default_registration"> -->
+                        <!-- <input type="hidden" id="orderType" name="orderType" value="Zayavka"> -->
+                        <input type="hidden" name="page_url" value="<?php echo $data['page_url']; ?>">
+                        <input type="hidden" name="user_agent" value="<?php echo $user_agent; ?>">
+                        <input type="hidden" name="utm_source" value="<?php echo $data['utm_source']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $data['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $data['utm_medium']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $data['utm_term']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $data['utm_content']; ?>">
+                        <input type="hidden" name="ref" value="<?php echo $data['ref']; ?>">
+                        <input type="hidden" name="ip_address" value="<?php echo $data['ip_address']; ?>">
+                        <input type="hidden" name="city" value="<?php echo $data['city']; ?>">
+                        <input type="hidden" name="client_id" value="<?php echo $data['client_id']; ?>">
+                        <input type="hidden" name="utmcsr" value="<?php echo $data['utmcsr']; ?>">
+                        <input type="hidden" name="utmccn" value="<?php echo $data['utmccn']; ?>">
+                        <input type="hidden" name="utmcmd" value="<?php echo $data['utmcmd']; ?>">
+                        <input type="hidden" name="click_id" value="<?php echo $data['click_id']; ?>">
+                        <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
+
+                        <!-- Zoho -->
+                    <!--     <input type="hidden" name="product_id" value="1212">
+                        <input type="hidden" name="product_name" value="&laquo;BootCamp 2&raquo;"> -->
+                        <!-- Zoho -->
+
+                        <!-- END Hidden DB Fields -->
+
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Rezart">
+                        <input type="hidden" name="admin_email" value="project@rezart.agency">
+                        <input type="hidden" name="form_subject" value="Rezart Article">
+                        <!-- END Hidden Required Fields -->
+
+                        <span class="input field">
+                            <input id="name_02" required="" class="form-control name input__field " type="text" name="name" />
+                            <label class="input__label" for="name_02">
+                                <span class="input__label-content">Ваше имя, наименование организации</span>
+                            </label>
+                        </span>
+
+
+                        <span class="input field">
+                            <input id="tel_02" required="" class="form-control name input__field" type="tel" name="phone"  />
+                            <label class="input__label" for="tel_02">
+                                <span class="input__label-content">Ваш номер телефона</span>
+                            </label>
+                        </span>
+
+
+                        <button type="submit" class="btn" name="send" >отправить заявку</button>
+
+                        <!-- Просто любое дополнительное поле -->
+                        <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+                        <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                        <input type="hidden" class="pacet" name="form_pacet" value="">
+                        <!-- GET RESPONCE INPUTS -->
+                        <input type="hidden" name="start_day" value="0"/>
+                        <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                        <input type="hidden" name="campaign_token" value=""/>
+                        <!-- GET RESPONCE INPUTS -->
+                        <div class="clear"></div>
+
+                    </form>
+                    <div class="text--sm">* Ваши данные никогда не будут переданы 3-м лицам</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container">
