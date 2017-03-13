@@ -1,0 +1,61 @@
+@import "bourbon";
+@import "vars.scss";
+
+body {
+    position: relative;
+    font: 16px/24px $main_font;
+    color: $main_text_color;
+    background-color: #fff;
+}
+
+body.unscroll{
+    overflow: hidden;
+}
+
+h2{
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.text--title{
+    font-family: $bold_font;
+}
+
+.text--gold{
+    color: $main_color;
+}
+
+.text--hl{
+    background-color: #cfc2a9;
+}
+
+.title{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.md-modal.md-show{
+    opacity: 1;
+  }
+.md-modal{
+    opacity: 0;
+  }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ /* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,  0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: $main_color;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $main_color;
+}

@@ -4,10 +4,10 @@
 $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
- $db_host = "qagirl.mysql.ukraine.com.ua";
-$db_user = "qagirl_db"; // Логин БД
-$db_password = "CS3H7lta"; // Пароль БД
-$database = "qagirl_db"; // БД
+ $db_host = "womenc00.mysql.ukraine.com.ua";
+$db_user = "womenc00_mk"; // Логин БД
+$db_password = "ma4s73uc"; // Пароль БД
+$database = "womenc00_mk"; // БД
 
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
@@ -56,24 +56,18 @@ function GetClearPhoneNumber($number) {
   $number = str_replace('+', '', $number);
   return $number;
 }
-$name = getVar('name');
-$phone = getVar('custom_tel');
-$email = getVar('email');
+$name = getVar('entry_906276550');
+$phone = getVar('entry_712604779');
+$email = getVar('entry_1158701611');
+$companie = getVar('entry_1634749921');
 
-// if (empty($name) && empty($phone) && empty($email)) {
-//   $name = getVar('name');
-//   $phone = getVar('custom_tel');
-//   $email = getVar('email');
-// } else {
-//   $name = getVar('entry_648859501');
-//   $phone = getVar('entry_1805884529');
-//   $email = getVar('entry_1502780938');
-// }
+
 
 $data = array(
   'name' => $name,
   'phone'     => GetClearPhoneNumber($phone),
   'email'     => $email,
+  'companie'     => $companie,
   'registrationType' => getVar('registrationType'),
   'orderType' => getVar('orderType'),
   'date_visited' => date("d.m.Y"),
@@ -116,7 +110,7 @@ switch ($data['registrationType']) {
         $registration_type_id = "";
         break;
     default:
-        throw new \RuntimeException('Undefined Registration Type. Add class default_registration for default');
+         $registration_type_id = 'default_registration';
         break;
 }
 
@@ -128,6 +122,7 @@ if (empty($data['confirmation_phone'])) {
             `leads`(
                       `first_name`,
                       `last_name`,
+                      `companie`,
                       `email`,
                       `phone`,
                       `registrationType`,
@@ -155,6 +150,7 @@ if (empty($data['confirmation_phone'])) {
                       ) 
             VALUES('".$fullName[0]."',
                     '".(empty($fullName[1]) ? '-' : $fullName[1])."',
+                    '".$data['companie']."',
                     '".$data['email']."',
                     '".$data['phone']."',
                     '".$data['registrationType']."',

@@ -4,10 +4,10 @@
 $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
- $db_host = "qagirl.mysql.ukraine.com.ua";
-$db_user = "qagirl_db"; // Логин БД
-$db_password = "CS3H7lta"; // Пароль БД
-$database = "qagirl_db"; // БД
+ $db_host = "womenc00.mysql.ukraine.com.ua";
+$db_user = "womenc00_mk"; // Логин БД
+$db_password = "ma4s73uc"; // Пароль БД
+$database = "womenc00_mk"; // БД
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
 

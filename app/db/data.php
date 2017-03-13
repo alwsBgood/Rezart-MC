@@ -70,10 +70,12 @@
     SetCookie("aff_id", $aff_id, time()+2592000);
   }
 
+    function selfURL(){ if(!isset($_SERVER['REQUEST_URI'])) $suri = $_SERVER['PHP_SELF']; else $suri = $_SERVER['REQUEST_URI']; $s = empty($_SERVER["HTTPS"]) ? '' : ($_SERVER["HTTPS"] == "on") ? "s" : ""; $sp=strtolower($_SERVER["SERVER_PROTOCOL"]); $pr = substr($sp,0,strpos($sp,"/")).$s; $pt = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]); return $pr."://".$_SERVER['SERVER_NAME'].$pt.$suri; }
+
   $data = array(
     'date_visited' => date("d.m.Y"),
     'time_visited' => date("G:i:s"),
-    'page_url'     => $_SERVER['HTTP_HOST'],
+    'page_url'     => selfURL(),
     'utm_source'   => isset($_GET['utm_source']) ? $_GET['utm_source'] : null,
     'utm_campaign' => isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : null,
     'utm_medium'   => isset($_GET['utm_medium']) ? $_GET['utm_medium'] : null,
