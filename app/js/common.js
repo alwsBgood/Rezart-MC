@@ -83,6 +83,7 @@ $(function() {
       url: 'mail.php',
       data: msg,
       success: function() {
+        $.post("parser.php",{ajax: true});
         setTimeout(function() {
           $("[name=send]").removeAttr("disabled");
         }, 1000);
@@ -99,6 +100,27 @@ $(function() {
 })
 });
 
+
+$(document).ready(function() {
+  var users = (function () {
+    var users = null;
+    $.ajax({
+      'async': false,
+      'global': false,
+      'url': '/mk/users.json',
+      'dataType': "json",
+      'success': function (data) {
+        users = data.users_value;
+      }
+    });
+    return users;
+  })();
+  if( users > 50) {
+    $('.places_left').text('Мест больше не осталось :(')
+  } else {
+    $('.places_counter').text(50 - users);
+  }
+});
 
  // Smooth scroll to anchor
 
@@ -200,3 +222,6 @@ $('.md-close').click(function() {
 $('.md-overlay').click(function() {
   $("body").removeClass('unscroll');
 });
+
+
+

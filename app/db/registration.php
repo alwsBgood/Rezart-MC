@@ -4,7 +4,7 @@
 $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
- $db_host = "womenc00.mysql.ukraine.com.ua";
+$db_host = "womenc00.mysql.ukraine.com.ua";
 $db_user = "womenc00_mk"; // Логин БД
 $db_password = "ma4s73uc"; // Пароль БД
 $database = "womenc00_mk"; // БД
