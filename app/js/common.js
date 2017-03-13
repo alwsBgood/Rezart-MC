@@ -87,7 +87,7 @@ $(function() {
           $("[name=send]").removeAttr("disabled");
         }, 1000);
         $('div.md-show').removeClass('md-show');
-        // window.location = 'http://rezart.agency/mk/success/';
+        window.location = 'http://rezart.agency/mk/success/';
       },
       error: function(xhr, str) {
         console.log("Erorr")
