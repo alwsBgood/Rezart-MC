@@ -115,7 +115,12 @@
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
-  padding: 95px 0; }
+  padding: 95px 0 70px; }
+  #sec_06 span {
+    display: inline-block;
+    margin-top: 15px; }
+  #sec_06 br {
+    display: block; }
 
 .item_list li {
   padding-left: 30px;

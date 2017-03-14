@@ -2,6 +2,7 @@
     require 'db/data.php';
     require 'db/visits.php';
 ?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
 
@@ -11,10 +12,10 @@
 
     <title>Rezart Agency | Как получить максимум от маркетинга!</title>
 
-    <meta name="description" content="Эксперты команды TOP 10 digital agency Ukraine  о том как получить максимум от маркетинга! Бесплатный мастер-класс по эффективному маркетингу  для собственников бизнеса.">
+    <meta name="description" content="Эксперты команды Rezart Agency о том как получить максимум от маркетинга! Бесплатный мастер-класс по эффективному маркетингу  для собственников бизнеса.">
     <meta name="keywords" content="rezart agency, rezart, диджитал агенство украина, top 10 digital agency Ukraine, master-class, бизнес, маркетинг, эфеективность">
 
-    <meta property="og:description" content="Эксперты команды TOP 10 digital agency Ukraine  о том как получить максимум от маркетинга! Бесплатный мастер-класс по эффективному маркетингу  для собственников бизнеса." />
+    <meta property="og:description" content="Эксперты команды Rezart Agency о том как получить максимум от маркетинга! Бесплатный мастер-класс по эффективному маркетингу  для собственников бизнеса." />
 
     <meta property="og:image" content="http://rezart.agency/am/img/og.jpg" />
     <meta property="og:image:type" content="image/jpg" />
@@ -74,14 +75,14 @@
         <div class="row">
             <div class="col-12 header">
                 <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 792"><path d="M216.8 247.3c150.2 0 147.2 0 156.1 0 50.4 0 100.2 42.1 100.4 102.3 0.1 56.2-43.8 91.1-72.4 98 0.9 0 38.4 66.8 38.4 66.8l172.2-291.2 179.5 305.3c5.4 9.9 8.8 15.6 11.3 22.7 5.3 15.3-8.8 25.6-18.7 25.7 -9.7 0.1-14.6-3.6-24.4-8.9l-108.1-62 -39.9-74.4 108.4 63L610.6 310.8c0 0-139.3 237.5-144 244.6 -8.1 12.1-13.4 21.6-28.4 21.6 -14.6 0-21.4-9.6-29-21.3 -1.7-3.4-89.8-148.9-89.8-148.9 32.1 0.1 28.9 0.1 54.8 0.1 21.1 0 54-18.6 54-55.7 0-22.2-17.1-56.4-57.9-56.4 -45.2 0-126.3 0-126.3 0L216.8 247.3z"/><path d="M217.1 351l47.7 83.4 -0.3 119.8c0 0 0.5 22.5-24.2 22.9 -0.3-0.3-23.7 1.8-23.7-22.2C216.7 530.8 217.1 351 217.1 351z"/><path d="M264.9 434.4l-0.1 119c0 0 0.4 23.3-24.3 23.7"/></svg></div>
-                <p class="info text--title">18 марта 2017 г, 18:00 <br /> Киев, ул Коновальца <br /> д 36д, 8 этаж</p>
+                <p class="info">18 марта 2017 г, 11:00 <br /> Киев, ул Коновальца <br /> д 36д, 8 этаж</p>
                 <div class="clear"></div>
             </div>
             <div class="col-12 tc">
                 <div class="main_block">
-                    <p class="beforeheader text--gold">Эксперты команды TOP 10 digital agency Ukraine  о том</p>
+                    <p class="beforeheader text--gold">Эксперты команды Rezart Agency о том</p>
                     <h1 class="text--title">Как получить максимум <br /> от маркетинга</h1>
-                    <p class="afterheader title text--gold text--title">Бесплатный мастер-класс по эффективному <br /> маркетингу  для собственников бизнеса</p>
+                    <p class="afterheader title text--gold">Бесплатный мастер-класс по эффективному <br /> маркетингу  для собственников бизнеса</p>
                     <a href="#anchor_form" class="btn_more flex scroll"><span>Забронировать участие</span></a>
                 </div>
                 <a href="#sec_02" class="scroll flex btndwn"><img src="img/bl1_arrow.png" alt="Arrow"></a>
@@ -97,8 +98,8 @@
                 <h2 class="text--title">Не упусти возможность узнать, <br /> как закрыть финансовые <br /> дыры в бюджете </h2>
                 <div class="item item--margined">
                     <p class="title text--title">Записаться на участие в мастер-классе <br /> от Rezart Agency за <span class="text--hl">1 клик</span></p>
-                    <p class="places_left text--title">Осталось <span class="text--gold places_counter">5</span> свободных мест</p>
-                    <p class="block_text">Оставьте заявку на регистрацию в мастер-классе</p>
+                    <p class="places_left text--title">Осталось <span class="text--gold places_counter"></span> свободных мест</p>
+                    <p class="block_text">Оставьте заявку на регистрацию на мастер-классе</p>
                 </div>
             </div>
             <div id="anchor_form" class="col-6 clearfix">
@@ -212,7 +213,7 @@
         </div>
         <div class="row">
             <div class="col-5">
-                <img src="img/bl4_img1.png" alt="Живое общение с профессионалами" class="sec_img-1">
+                <img src="img/bl4_img1.png" alt="Живое общение с профессионалами Rezart Agency" class="sec_img-1">
             </div>
             <div class="col-7">
                 <p class="text--title title">Об этом тебе никто не расскажет, кроме нас</p>
@@ -255,7 +256,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="text--title text--white title">Это апгрейд для Вашего бизнеса на 101% <br /> Ваша бизнесбомба для оптимизации бюджета, <br /> увеличения лояльности имеющихся клиентов и притока новых <br /><span class="text--hl">Событие, которое Вы ждали</span> </p>
+                <p class="text--title text--white title">Это апгрейд для Вашего бизнеса на 101% <br /> Ваша бизнесбомба для оптимизации бюджета, <br /> увеличения лояльности имеющихся клиентов и притока новых <br /><span class="text--hl">Событие, которого Вы ждали</span> </p>
             </div>
         </div>
     </div>
@@ -268,8 +269,8 @@
                 <h2 class="text--title">Обучайтесь у лучших и с лучшими</h2>
                 <div class="item item--margined">
                     <p class="title text--title">Записаться на участие в мастер-классе <br /> от Rezart Agency за <span class="text--hl">1 клик</span></p>
-                    <p class="places_left text--title">Осталось <span class="text--gold places_counter">5</span> свободных мест</p>
-                    <p class="block_text">Оставьте заявку на регистрацию в мастер-классе</p>
+                    <p class="places_left text--title">Осталось <span class="text--gold places_counter"></span> свободных мест</p>
+                    <p class="block_text">Оставьте заявку на регистрацию на мастер-классе</p>
                 </div>
             </div>
             <div class="col-6 clearfix">
@@ -487,6 +488,8 @@
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
     </script>
     <!-- Load Scripts End -->
+
+    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43439794 = new Ya.Metrika({ id:43439794, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43439794" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 </body>
 </html>

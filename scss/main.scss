@@ -134,7 +134,12 @@
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
-  padding: 95px 0;
+  padding: 95px 0 70px;
+  span{
+    display: inline-block;
+    margin-top: 15px;
+  }
+  br{display: block;}
 }
 
 
