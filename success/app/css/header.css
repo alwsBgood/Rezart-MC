@@ -125,6 +125,12 @@ h2 {
     -webkit-transform: translateX(0px);
     transform: translateX(0px); } }
 
+#sec_01 a.block_text {
+  color: #fff;
+  display: block; }
+  #sec_01 a.block_text:hover {
+    color: #a38f6a; }
+
 footer {
   padding: 15px 0 20px;
   background-color: #202020; }

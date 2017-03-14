@@ -299,6 +299,11 @@ input:invalid{
     .info{
         float: right;
         text-align: right;
+        color: #fff;
+        transition: color .4s;
+        &:hover{
+          color: $main_color;
+        }
     }
 
     .main_block{

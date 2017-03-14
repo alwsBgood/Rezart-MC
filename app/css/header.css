@@ -249,7 +249,12 @@ input:invalid {
       fill: #fff; }
   #sec_01 .info {
     float: right;
-    text-align: right; }
+    text-align: right;
+    color: #fff;
+    -webkit-transition: color .4s;
+    transition: color .4s; }
+    #sec_01 .info:hover {
+      color: #a38f6a; }
   #sec_01 .main_block {
     margin-top: 70px; }
   #sec_01 .beforeheader {

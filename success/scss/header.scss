@@ -166,6 +166,16 @@ h2{
 }
 
 
+#sec_01{
+  a.block_text{
+    color: #fff;
+    display: block;
+    &:hover{
+      color: $main_color;
+    }
+  }
+}
+
 footer{
   padding: 15px 0 20px;
   background-color: #202020;
