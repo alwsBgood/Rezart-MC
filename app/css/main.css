@@ -122,6 +122,25 @@
   #sec_06 br {
     display: block; }
 
+#sec_08 {
+  padding: 100px 0 0px; }
+  #sec_08 h2 {
+    margin-bottom: 60px; }
+  #sec_08 .coach_img {
+    width: 100%;
+    max-width: 488px; }
+  #sec_08 .coach_name {
+    margin: 40px 0 0; }
+  #sec_08 .coach_prof {
+    margin-bottom: 25px; }
+  #sec_08 .coach_description {
+    max-width: 490px; }
+  #sec_08 .block_text + .block_text {
+    margin-top: 10px; }
+  #sec_08 .coach_item {
+    width: 100%;
+    max-width: 460px; }
+
 .item_list li {
   padding-left: 30px;
   position: relative; }
@@ -163,6 +182,58 @@ footer {
       transition: .3s; }
       footer .logo_rezart svg:hover {
         fill: #a38f6a; }
+  footer .footer-fire:hover {
+    -webkit-animation-name: fire;
+    animation-name: fire;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-end;
+    animation-timing-function: step-end;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    opacity: 1; }
+
+@-webkit-keyframes fire {
+  0% {
+    background-position: 0 center; }
+  25% {
+    background-position: -46px center; }
+  50% {
+    background-position: -84px center; }
+  75% {
+    background-position: -128px center; }
+  100% {
+    background-position: -160px center; } }
+
+@keyframes fire {
+  0% {
+    background-position: 0 center; }
+  25% {
+    background-position: -46px center; }
+  50% {
+    background-position: -84px center; }
+  75% {
+    background-position: -128px center; }
+  100% {
+    background-position: -160px center; } }
+  footer .footer-fire {
+    display: inline-block;
+    height: 45px;
+    width: 35px;
+    overflow: hidden;
+    background-image: url(../img/fire.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 0 center;
+    padding: 0;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    background-size: 200px;
+    float: right;
+    margin-right: 30px;
+    opacity: .5; }
 
 .hidden {
   height: 0;
@@ -418,7 +489,10 @@ input:-ms-input-placeholder {
 
 @media (max-width: 767px) {
   [class*='col-'] {
-    width: 100%; }
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    float: none; }
   h2 {
     font-size: 30px;
     line-height: 34px; }
@@ -433,7 +507,7 @@ input:-ms-input-placeholder {
         display: none; }
     #sec_02 .item--margined, #sec_07 .item--margined {
       padding-left: 0px;
-      max-width: 500px;
+      max-width: 600px;
       margin-right: 0; }
     #sec_02 .form_block, #sec_07 .form_block {
       float: none;
@@ -454,18 +528,23 @@ input:-ms-input-placeholder {
     display: block;
     margin: 0 auto 40px; }
   #sec_05 h2 {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto 40px; }
   #sec_05 .sec_img-1 {
     display: none; }
   #sec_05 .col-8 {
     width: 100%; }
   #sec_05 .item_list {
-    max-width: 500px;
+    max-width: 600px;
     margin: 32px auto 0;
     display: block; }
   #sec_05 .item_list + .item_list {
     margin-left: auto; }
+  #sec_08 h2 {
+    text-align: center;
+    margin-bottom: 0; }
+  #sec_08 .coach_item {
+    margin: 60px auto 0; }
   footer {
     text-align: center; }
     footer .politics a {
@@ -474,10 +553,13 @@ input:-ms-input-placeholder {
       text-align: center; }
     footer .politics a + a {
       margin-left: 0; }
-    footer .logo_rezart {
+    footer .logo_rezart, footer .footer-fire {
       display: inline-block;
       float: none;
-      margin-top: 20px; }
+      vertical-align: top;
+      margin: 10px 10px 0; }
+    footer .logo_rezart {
+      margin-top: 15px; }
   div[id*='modal_politics'] h2 {
     padding-top: 70px; }
   div[id*='modal_politics'] .btn_close_modal {

@@ -83,7 +83,12 @@
 }
 
 @media (max-width: 767px) {
-  [class*='col-']{width: 100%;}
+  [class*='col-']{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    float: none;
+  }
   h2{font-size: 30px; line-height: 34px; }
   br{display: none;}
   #sec_02, #sec_07{
@@ -97,7 +102,7 @@
     }
     .item--margined{
       padding-left: 0px;
-      max-width: 500px;
+      max-width: 600px;
       margin-right: 0;
     }
     .form_block{
@@ -129,7 +134,7 @@
   }
   #sec_05{
     h2{
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto 40px;
     }
     .sec_img-1{
@@ -137,11 +142,20 @@
     }
     .col-8{width: 100%;}
     .item_list{
-      max-width: 500px;
+      max-width: 600px;
       margin: 32px auto 0;
       display: block;
     }
     .item_list+.item_list{margin-left: auto;}
+  }
+  #sec_08{
+    h2{
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .coach_item{
+      margin: 60px auto 0;
+    }
   }
   footer{
     text-align: center;
@@ -153,11 +167,13 @@
        }
      a+a{margin-left: 0 }
     }
-    .logo_rezart{
+    .logo_rezart, .footer-fire{
       display: inline-block;
       float: none;
-      margin-top: 20px;
+      vertical-align: top;
+      margin: 10px 10px 0;;
     }
+    .logo_rezart{margin-top: 15px;}
   }
   div[id*='modal_politics']{
     h2{padding-top: 70px;}
