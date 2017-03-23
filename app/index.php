@@ -146,13 +146,6 @@
                             </label>
                         </span>
 
-                        <span class="input field">
-                            <input id="companie_01" required="" class="form-control name input__field " type="text" name="entry.1634749921" />
-                            <label class="input__label" for="companie_01">
-                                <span class="input__label-content">Название Компании и Ниша</span>
-                            </label>
-                        </span>
-
 
                         <span class="input field">
                             <input id="tel_01" required="" class="form-control name input__field" type="tel" name="entry.712604779"  />
@@ -350,13 +343,6 @@
                             <input id="name_02" required="" class="form-control name input__field " type="text" name="entry.906276550" />
                             <label class="input__label" for="name_02">
                                 <span class="input__label-content">Ваше Имя и Фамилия</span>
-                            </label>
-                        </span>
-
-                        <span class="input field">
-                            <input id="companie_02" required="" class="form-control name input__field " type="text" name="entry.1634749921" />
-                            <label class="input__label" for="companie_02">
-                                <span class="input__label-content">Название Компании и Ниша</span>
                             </label>
                         </span>
 
